@@ -137,3 +137,9 @@ class Utils:
 
     def get_doc_parser(self, command=None):
         return python_doc_parser.get_instence(command)
+
+    def file_get_contents(self, path, file, ext):
+        f = open(path + '/' + file + '.' + ext, 'r+')
+        content = f.read()
+        f.close()
+        return content
