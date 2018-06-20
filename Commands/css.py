@@ -12,6 +12,7 @@ class css(Utils):
 
     """
         @command css
+        @syntax  python main.py css do create file -p name=<value> project=<value> content=<value>
         @method  create file
         @arg     str name
         @arg     str project
@@ -35,6 +36,7 @@ class css(Utils):
 
     """
         @command css
+        @syntax  python main.py css do rm file -p name=<value> project=<value>
         @method  rm file
         @arg     str name
         @arg     str project

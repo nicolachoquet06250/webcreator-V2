@@ -10,6 +10,15 @@ class image(Utils):
 
         self.ImageFile = File('Image').get_instence()
 
+    """
+        @command image
+        @syntax  python main.py image do create image -p title=<value> project=<value> longueur=<value> largeure=<value>
+        @method  create image
+        @arg     str title
+        @arg     str project
+        @arg     int longueur
+        @arg     int largeure
+    """
     def create_image(self, args):
         args = self.args(args)
 
@@ -34,6 +43,20 @@ class image(Utils):
             self.ImageFile.create(self.localhost + project, title)
             self.fill(self.localhost + project + '/images/', title, 'svg', content)
 
+    """
+        @command image
+        @syntax  python main.py image do create image -p title=<value> project=<value> longueur=<value> largeure=<value> bordercolor=<value> bgcolor=<value> border_opacity=<value> border_size=<value> gb_opacity=<value>
+        @method  create image
+        @arg     str title
+        @arg     str project
+        @arg     int longueur
+        @arg     int largeure
+        @arg     str bordercolor
+        @arg     str bgcolor
+        @arg     int border_opacity
+        @arg     int border_size
+        @arg     int gb_opacity
+    """
     def carre(self, args):
         args = self.args(args)
 
@@ -79,6 +102,13 @@ class image(Utils):
 
         self.fill(self.localhost + project + '/images/', title, 'svg', content)
 
+    """
+        @command image
+        @syntax  python main.py image do close image -p title=<value> project=<value>
+        @method  create image
+        @arg     str title
+        @arg     str project
+    """
     def close_image(self, args):
         args = self.args(args)
 

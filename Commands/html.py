@@ -13,6 +13,7 @@ class html(Utils):
 
     """
         @command html
+        @syntax  python main.py html do create file -p name=<value> title=<value> project=<value> content=<value> scripts=<value>
         @method  create file
         @arg     str name
         @arg     str title
@@ -47,6 +48,7 @@ class html(Utils):
 
     """
         @command html
+        @syntax  python main.py html do rm file -p name=<value> project=<value>
         @method  rm file
         @arg     str name
         @arg     str project
