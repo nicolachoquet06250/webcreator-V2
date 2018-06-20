@@ -10,6 +10,7 @@ class python_doc(Utils):
     """
         @command python_doc
         @method  genere_to_html
+        @arg string command
     """
 
     def genere_to_html(self, args):
@@ -42,11 +43,12 @@ class python_doc(Utils):
                                 type_and_var = v[annotation].split(' ')
                                 if len(type_and_var) > 1:
                                     content += 'type: ' + type_and_var[0] + '<br/>'
-                                    content += 'var: ' + type_and_var[1] + '<br/>'
+                                    content += 'var: ' + type_and_var[1]
                                 else:
-                                    content += 'var: ' + type_and_var[0] + '<br/>'
+                                    content += 'var: ' + type_and_var[0]
                                 if annotation == '@arg?':
-                                    content += '-> optionnelle<br/>'
+                                    content += '-> optionnelle'
+                                content += '<br/>'
                             else:
                                 content += annotation + ': ' + v[annotation].replace(' ', '_') + '<br/>'
                 content += '<br/>'

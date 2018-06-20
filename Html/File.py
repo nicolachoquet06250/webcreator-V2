@@ -11,20 +11,20 @@ class File(Utils):
         if not souscontent:
             souscontent = '<b>Hello World</b>'
 
-        content = '<!DOCTYPE html>\n' + \
-                  '<html>\n' + \
-                  '\t<head>\n' + \
-                  '\t\t<meta charset="utf-8" />\n' + \
-                  '\t\t<title>' + title + '</title>\n' + \
+        content = '<!DOCTYPE html>' + \
+                  '<html>' + \
+                  '<head>' + \
+                  '<meta charset="utf-8" />' + \
+                  '<title>' + title + '</title>' + \
                   scripts + \
-                  '\t\t<style>\n' + \
-                  '\t\t\t\n' + \
-                  '\t\t</style>\n' + \
-                  '\t</head>\n' + \
-                  '\t<body>\n' + \
-                  '\t\t' + souscontent + '\n' + \
-                  '\t</body>\n' + \
-                  '</html>\n'
+                  '<style>' + \
+                  '' + \
+                  '</style>' + \
+                  '</head>' + \
+                  '<body>' + \
+                  '' + souscontent + '' + \
+                  '</body>' + \
+                  '</html>'
         self.fill(path, name, 'html', content)
 
     def remove(self, path, name):

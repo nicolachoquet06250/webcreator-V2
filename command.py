@@ -8,6 +8,10 @@ class command:
     def start(self):
         tmp = ['', '', '']
         args = ' | '.join(self.args)
+
+        if args == '' or args == '-h' or args == '--help':
+            args = 'help | do | execute | -p | '
+
         args = args.split(' | do | ')
         tmp[0] = args[0]
         args = args[1].split(' | -p | ')

@@ -11,6 +11,12 @@ class sql(Utils):
         self.SqlFile = File('Sql').get_instence()
         self.PhpFile = File('Php').get_instence()
 
+    """
+        @command sql
+        @method create database
+        @arg string project
+        @arg string database
+    """
     def create_database(self, args):
         args = self.args(args)
 
@@ -30,6 +36,14 @@ class sql(Utils):
                       '\n\tdefine("password", "");'
                       '\n\tdefine("database", "' + database + '");\n\t')
 
+    """
+        @command sql
+        @method create table
+        @arg string project
+        @arg string database
+        @arg string table
+        @arg string champs
+    """
     def create_table(self, args):
         args = self.args(args)
 
