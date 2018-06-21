@@ -11,6 +11,7 @@ class js(Utils):
 
     """
         @command js
+        @syntax  python main.py js do create script -p name=<value> project=<value> content=<value>
         @method  create script
         @arg     str name
         @arg     str project
@@ -32,6 +33,7 @@ class js(Utils):
 
     """
         @command js
+        @syntax  python main.py js do rm script -p name=<value> project=<value>
         @method  rm script
         @arg     str name
         @arg     str project

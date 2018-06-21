@@ -12,6 +12,7 @@ class php(Utils):
 
     """
         @command php
+        @syntax  python main.py php do create file -p name=<value> project=<value> content=<value>
         @method  create file
         @arg     str name
         @arg     str project
@@ -38,6 +39,7 @@ class php(Utils):
 
     """
         @command php
+        @syntax  python main.py php do rm file -p name=<value> project=<value>
         @method  rm file
         @arg     str name
         @arg     str project

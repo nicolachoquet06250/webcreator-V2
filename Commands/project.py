@@ -30,6 +30,7 @@ class project(Utils):
 
     """
         @command project
+        @syntax  python main.py project do initialize -p name=<value>
         @method  initialize
         @arg     string name
     """
@@ -49,6 +50,7 @@ class project(Utils):
 
     """
         @command project
+        @syntax  python main.py project do create file
         @method  create file
         @arg     string name
     """
@@ -64,6 +66,7 @@ class project(Utils):
 
     """
         @command project
+        @syntax  python main.py project do create global -p project=<value>
         @method  create file
         @arg     string projectname
     """
@@ -85,8 +88,9 @@ class project(Utils):
 
     """
         @command css
+        @syntax  python main.py project do test logger -p text_a_logger=<value>
         @method  create file
-        @arg     str test_a_logger
+        @arg     str text_a_logger
     """
 
     def test_logger(self, args):

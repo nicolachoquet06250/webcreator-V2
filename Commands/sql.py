@@ -13,10 +13,12 @@ class sql(Utils):
 
     """
         @command sql
+        @syntax  python main.py sql do create database -p project=<value> database=<value>
         @method create database
         @arg string project
         @arg string database
     """
+
     def create_database(self, args):
         args = self.args(args)
 
@@ -38,12 +40,14 @@ class sql(Utils):
 
     """
         @command sql
+        @syntax  python main.py sql do create database -p project=<value> database=<value> table=<value> champs=<value>
         @method create table
         @arg string project
         @arg string database
         @arg string table
         @arg string champs
     """
+
     def create_table(self, args):
         args = self.args(args)
 

@@ -19,6 +19,7 @@ class image(Utils):
         @arg     int longueur
         @arg     int largeure
     """
+
     def create_image(self, args):
         args = self.args(args)
 
@@ -57,6 +58,7 @@ class image(Utils):
         @arg     int border_size
         @arg     int gb_opacity
     """
+
     def carre(self, args):
         args = self.args(args)
 
@@ -109,6 +111,7 @@ class image(Utils):
         @arg     str title
         @arg     str project
     """
+
     def close_image(self, args):
         args = self.args(args)
 

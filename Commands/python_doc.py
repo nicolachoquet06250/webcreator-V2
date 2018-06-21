@@ -9,6 +9,7 @@ class python_doc(Utils):
 
     """
         @command python_doc
+        @syntax  python main.py python doc do genere to html -p command=<value>
         @method  genere_to_html
         @arg string command
     """
@@ -78,6 +79,7 @@ class python_doc(Utils):
 
     """
         @command python_doc
+        @syntax  python main.py python doc do get -p command=<value>
         @method  get
         @arg     str command
     """
